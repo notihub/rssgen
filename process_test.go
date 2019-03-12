@@ -15,7 +15,7 @@ func TestGenerateRSS(t *testing.T) {
                   <p class="col-9 d-inline-block text-gray m-0 pr-4">
                             {%:description}
                   </p>`
-	rss, err := generateRSS(Generator{Url: "https://github.com/trending", Rule: rule})
+	rss, err := GenerateRSS(Generator{Url: "https://github.com/trending", Rule: rule})
 	if err != nil {
 		t.Fatal(err)
 	}

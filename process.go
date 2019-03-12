@@ -38,7 +38,7 @@ func reformattedHtml(link string) (html string, err error) {
 	return html, nil
 }
 
-func generateRSS(generator Generator) (rss string, err error) {
+func GenerateRSS(generator Generator) (rss string, err error) {
 	html, err := reformattedHtml(generator.Url)
 	if err != nil {
 		return "", err
